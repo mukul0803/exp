@@ -1,14 +1,16 @@
 const express = require('express');
 const app = express();
+const cors = require("cors");
 
 app.set('view engine','ejs');
 
 app.use(express.json());
 
+app.use(cors());
 
-app.use('/',(req,res)=> {
 
-    // res.send("Hello");
+app.get('/',(req,res)=> {
+
     res.render('index');
     
 });

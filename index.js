@@ -6,7 +6,7 @@ app.set('view engine','ejs');
 app.use(express.json());
 
 
-app.get('/',(req,res)=> {
+app.use('/',(req,res)=> {
 
     // res.send("Hello");
     res.render('index');

@@ -12,7 +12,7 @@ app.use(cors());
 app.get('/',(req,res)=> {
     console.log(__dirname);
     // res.render('index');
-    res.render("/index.ejs");
+    res.render("/views/index.ejs");
     
 });
 

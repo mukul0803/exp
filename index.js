@@ -11,7 +11,7 @@ app.use(cors());
 
 app.get('/',(req,res)=> {
 
-    res.render('index');
+    res.render('index.ejs');
     
 });
 

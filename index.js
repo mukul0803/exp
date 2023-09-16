@@ -12,8 +12,7 @@ app.use(cors());
 
 app.get('/',(req,res)=> {
     console.log(__dirname);
-    // res.render('index');
-    res.send(__dirname);
+    res.render('index');
     
 });
 
